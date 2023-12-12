@@ -1,7 +1,7 @@
 const imagens = [
     './imagens/camila.webp',
     './imagens/emmily.webp',
-    './imagens/selete.JPG',
+    './imagens/selete.jpg',
     './imagens/Alexandre.webp',
     './imagens/erica.webp',
 
