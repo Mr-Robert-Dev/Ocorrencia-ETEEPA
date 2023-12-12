@@ -1,0 +1,246 @@
+
+/* Iniciando o logo */
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.cabecario{
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    background: black;
+    flex-direction: row;
+    Justify-content: space-between
+}
+.aqui{
+    color:red
+}
+
+.logo{
+    width: 30vw;
+    height: 6rem;
+}
+
+.imagem{
+    width: 100%;
+    height: 6rem;
+}
+/*  Menu */
+
+nav{
+    display: flex;
+    gap: 1rem;
+    margin-inline: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-block: 2rem;
+}
+a:hover{
+    color:red;
+}
+.nav-list{
+    list-style: none;
+}
+.botao{
+    border: none;
+    border-top: 3px white solid;
+    background: none;
+    cursor: pointer;
+    height: 3px;
+    width: 30px;
+    display: none;
+
+}
+
+.botao::after,.botao::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    margin-left: -5px;
+    position: relative;
+    transition: 0.3s;
+
+}
+/* parte do corpo da pagina  */
+
+.apresentacao{
+        background-image: url(./imagens/fundo.png);
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        animation: gradiente 25s ease infinite;
+    }
+    
+.titulo{
+    width: 60%;
+    height: 20rem;
+    margin-left: 10vw;
+}
+
+h1{
+  font-size: 6vw;
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  -webkit-text-stroke: 0.1rem #000; /* Borda de 1 pixel, cor preta */
+}
+
+.sub-titulo{
+    margin-top: 17vh;
+    font-size: 4vw;
+    margin-left: 10vw;
+}
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235, 221, 221);
+
+}
+span{
+    background-color: red;
+}
+
+/* Segunda parte do corpo da página */
+.apresentacao2{
+    width: 100vw;
+    height: 100vh;
+    background:
+    radial-gradient(rgb(216, 14, 14) 15%, transparent 16%) 0 0,
+    radial-gradient(rgb(179, 7, 7) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(216, 14, 14,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 11, 11, 0.836)5%, transparent 20%) 8px 9px;
+    background-color:#e21515;
+    background-size:16px 16px;
+    animation: gradiente 15s ease infinite;
+
+}
+
+
+@keyframes gradiente {
+    0% {
+        background-position: 0% 50%; }
+ 
+    50% {
+        background-position: 100% 50%; }
+ 
+    100% {
+        background-position: 0% 50%;}
+}
+p{
+    margin-top: 0;
+}
+
+.text{
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 4vw;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Exemplo de sombra de texto */
+    font-family: 'Roboto', 'Arial', sans-serif; /* Exemplo de fontes alternativas */
+}
+
+.campo-fotos{
+    background: rgb(0, 0, 0);
+    height: 80%;
+}
+.fotos {
+    position: relative;
+    height: 80vh; /* 100% da altura da viewport, ajuste conforme necessário */
+    width: 100%;
+    overflow: hidden; /* Para garantir que a animação não ultrapasse o contêiner */
+    background-image: url(./imagens/teste.png);
+}
+
+.fotos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Dobrando a largura para a animação horizontal */
+    height: 200%; /* Dobrando a altura para a animação vertical */
+    background-image: url(./imagens/teste.png);
+    background-size: 50% 50%; /* Ajustando o tamanho da imagem para metade do contêiner */
+    animation: gradients 25s linear infinite;
+}
+
+@keyframes gradients {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+/* rodapé */
+
+.rodape{
+    background: rgb(22, 22, 22);
+    text-align: center;
+    height: 5rem;
+    display: flex;
+}
+.rodape p{
+    margin: 2px;
+}
+.conteudo-rodape{
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+@media (max-width: 750px){
+    .botao {
+        display: block;
+        z-index: 1;
+      }
+    .nav-list{
+      display:none
+    }
+     .cabecario{
+      display:flex;
+      Justify-content: space-between;
+     }
+     .sub-titulo{
+        margin-top: -15vh;
+        font-size: 6vw;
+        margin-left: 10vw;
+    }
+    }
+    .menu{
+      height: auto;
+      display:flex;
+      align-items: center;
+      margin-right: 10%;
+    }
+
+    
+    
+    

@@ -1,0 +1,336 @@
+/* Iniciando o logo */
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
+
+.cabecario{
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    background: black;
+    flex-direction: row;
+    Justify-content: space-between
+}
+.aqui{
+    color:red
+}
+
+.logo{
+    width: 30vw;
+    height: 6rem;
+}
+
+.imagem{
+    width: 100%;
+    height: 6rem;
+}
+/*  Menu */
+
+nav{
+    display: flex;
+    gap: 1rem;
+    margin-inline: 2rem;
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-block: 2rem;
+}
+a:hover{
+    color:red;
+}
+.nav-list{
+    list-style: none;
+}
+.botao{
+    border: none;
+    border-top: 3px white solid;
+    background: none;
+    cursor: pointer;
+    height: 3px;
+    width: 30px;
+    display: none;
+
+}
+
+.botao::after,.botao::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    margin-left: -5px;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+/* parte do corpo da pagina  */
+.nos{
+    width: 100vw;
+    height: 90vh;
+    background: black;
+   padding-top: 10vh;
+
+}
+.nos-conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.informacao{
+    width: 70vw;
+    height:60vh;
+    display: flex;
+}
+.text{
+    background: red;
+    width: 50%;
+    height: 100%;
+    border: black 1px solid;
+    border-radius: 15%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title{
+    text-align: center;
+    padding: 2%;
+    color: white;
+    font-size: calc(1vw + 2vh); 
+
+}
+.sub-title{
+    text-align: justify;
+    padding: 2%;
+    color: white;
+    font-size: calc(0.5vw + 1vh); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto{
+    background: rgb(168, 22, 46);
+    width: 50%;
+    height: 100%;
+    border-radius: 15%;
+    margin-right: -5%;
+}
+.imagem{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+/* parte 2 do corpo da pagina  */
+
+.equipe{
+    background: black;
+    padding-top: 0;
+    justify-content: center;
+    display: flex;
+
+}
+.p{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: calc(3vw + 3vh); 
+    ;
+
+}
+
+.membros{
+    width: 100vw;
+    height: 90vh;
+    background: black;
+   padding-top: 10vh;
+
+}
+.membros-conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.membros-informacao{
+    width: 70vw;
+    height:60vh;
+    display: flex;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+
+}
+.membros-text{
+    background: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 15%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#membros-title{
+    text-align: center;
+    padding: 2%;
+    color: white;
+    font-size: calc(1vw + 2vh); 
+
+}
+#membros-sub-title{
+    text-align: justify;
+    padding: 2%;
+    color: white;
+    font-size: calc(0.5vw + 1vh); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto-membros{
+    width: 50%;
+    height: 100%;
+    border-radius: 15%;
+    margin-right: -5%;
+}
+#imagem{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+/* Estilo base do botão */
+.proximo {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .proximo:hover {
+    background-color: #2980b9;
+  }
+
+/* parte das redes sociais */
+.sociais{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100vw;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(3vw + 3vh); 
+}
+
+
+    .p-redes {
+    margin-top: 0;
+    font-size: calc(3vw + 3vh); 
+    }
+.redes{
+    font-size: calc(1vw + 1vh); 
+
+}
+.instagram{
+    height:50vh;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:10vh ;
+
+}
+.qr{
+    height:40vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.qr img{
+    height:100%;
+    margin-left: 5vw;
+
+    
+}
+.insta{
+    height:40vh;
+    width:20vw;
+}
+.ins{
+    height:40vh;
+    width:20vw;
+}
+
+   /* rodapé*/
+
+   .rodape{
+    background: rgb(22, 22, 22);
+    text-align: center;
+    height: 5rem;
+    display: flex;
+}
+.rodape p{
+    margin: 2px;
+}
+.conteudo-rodape{
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+color:white}
+
+@media (max-width: 750px){
+    .botao {
+        display: block;
+        z-index: 1;
+      }
+    .nav-list{
+      display:none
+    }
+     .cabecario{
+      display:flex;
+      Justify-content: space-between;
+     }
+
+     .membros-informacao{
+        width: 80vw;
+        height:60vh;
+        display: flex;
+        text-align: center; /* Centraliza o conteúdo horizontalmente */
+        flex-direction: column;
+
+     }
+
+     .membros-text{
+        background: red;
+        width: 50%;
+        height:40%;
+        border-radius: 15%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }}
+    .menu{
+      height: auto;
+      display:flex;
+      align-items: center;
+      margin-right: 10%;
+    }
+  

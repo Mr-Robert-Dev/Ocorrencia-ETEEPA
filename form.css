@@ -1,0 +1,198 @@
+/* Iniciando o logo */
+body {
+    background-color: #FF7D9D;
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+    0px 36px, 4px 2px, 29px 6px, 33px 30px;
+    background-image:
+    linear-gradient(335deg, red 23px, transparent 23px),
+    linear-gradient(155deg, red 23px, transparent 23px),
+    linear-gradient(335deg, red 23px, transparent 23px),
+    linear-gradient(155deg,  red 23px, transparent 23px),
+    
+    linear-gradient(335deg,  red 10px, transparent 10px),
+    linear-gradient(155deg, red, 10px, transparent 10px),
+    linear-gradient(335deg,  red, 10px, transparent 10px),
+    linear-gradient(155deg,  red 10px, transparent 10px);
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.cabecario{
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    background: black;
+    flex-direction: row;
+    Justify-content: space-between
+}
+.aqui{
+    color:red
+}
+
+.logo{
+    width: 30vw;
+    height: 6rem;
+}
+
+.imagem{
+    width: 100%;
+    height: 6rem;
+}
+/*  Menu */
+
+nav{
+    display: flex;
+    gap: 1rem;
+    margin-inline: 2rem;
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-block: 2rem;
+}
+a:hover{
+    color:red;
+}
+.nav-list{
+    list-style: none;
+}
+.botao{
+    border: none;
+    border-top: 3px white solid;
+    background: none;
+    cursor: pointer;
+    height: 3px;
+    width: 30px;
+    display: none;
+
+}
+
+.botao::after,.botao::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    margin-left: -5px;
+    position: relative;
+    transition: 0.3s;
+
+}
+/* Iniciando o formulario */
+.apresentacao{
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+.informacoes{
+    background: #ff0000;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+h1, h3{
+    text-align: center;
+    color: white;
+}
+.form{
+    background: black;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 4%;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px double red;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.obrigado{
+    display: none;
+}
+input{
+    width: 50%;
+    background: #a00c0c;
+    color: white;
+}
+label{
+    padding: 0.5rem;
+}
+textarea{
+    resize: none;
+    width: 50%;
+    background: #a00c0c;
+
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2vh;
+    width: 10vw;
+    height: 5vh;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Iniciando o rodapé */
+.rodape{
+    background: rgb(22, 22, 22);
+    text-align: center;
+    height: 5rem;
+    display: flex;
+}
+.rodape p{
+    margin: 2px;
+}
+.conteudo-rodape{
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+color:white}
+
+@media (max-width: 750px){
+    .botao {
+        display: block;
+        z-index: 1;
+      }
+    .nav-list{
+      display:none
+    }
+     .cabecario{
+      display:flex;
+      Justify-content: space-between;
+
+     }
+    }
+    .menu{
+      height: auto;
+      display:flex;
+      align-items: center;
+      margin-right: 10%;
+    }
+    .form{
+        background: black;
+        width: 60vw;
+        height: 80vh;}
